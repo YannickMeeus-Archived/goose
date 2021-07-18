@@ -1,23 +1,22 @@
-# cli-template
+# goose
 
 ## Usage
-> This cli template shows the date and time in the terminal
+> A collection of automation steps just to make the author's life a bit easier
 
-cli-template
+goose
 
 ## Description
 
 ```
-This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
-This template prints the date or time to the terminal.
+I would be surprised if this is going to be useful to a lot more people than just myself,
+but we'll see. This CLI will help me create a bunch of ad hoc things that help me in my day to day
+development tasks.'
 ```
 ## Examples
 
 ```bash
-cli-template date
-cli-template date --format 20060102
-cli-template time
-cli-template time --live
+goose github pat create
+goose s3 bucket create
 ```
 
 ## Flags
@@ -30,23 +29,21 @@ cli-template time --live
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion`|generate the autocompletion script for the specified shell|
-|`cli-template date`|Prints the current date.|
-|`cli-template help`|Help about any command|
-|`cli-template time`|Prints the current time|
+|`goose completion`|generate the autocompletion script for the specified shell|
+|`goose help`|Help about any command|
 # ... completion
-`cli-template completion`
+`goose completion`
 
 ## Usage
 > generate the autocompletion script for the specified shell
 
-cli-template completion
+goose completion
 
 ## Description
 
 ```
 
-Generate the autocompletion script for cli-template for the specified shell.
+Generate the autocompletion script for goose for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
 ```
@@ -54,17 +51,17 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion bash`|generate the autocompletion script for bash|
-|`cli-template completion fish`|generate the autocompletion script for fish|
-|`cli-template completion powershell`|generate the autocompletion script for powershell|
-|`cli-template completion zsh`|generate the autocompletion script for zsh|
+|`goose completion bash`|generate the autocompletion script for bash|
+|`goose completion fish`|generate the autocompletion script for fish|
+|`goose completion powershell`|generate the autocompletion script for powershell|
+|`goose completion zsh`|generate the autocompletion script for zsh|
 # ... completion bash
-`cli-template completion bash`
+`goose completion bash`
 
 ## Usage
 > generate the autocompletion script for bash
 
-cli-template completion bash
+goose completion bash
 
 ## Description
 
@@ -76,13 +73,13 @@ This script depends on the 'bash-completion' package.
 If it is not installed already, you can install it via your OS's package manager.
 
 To load completions in your current shell session:
-$ source <(cli-template completion bash)
+$ source <(goose completion bash)
 
 To load completions for every new session, execute once:
 Linux:
-  $ cli-template completion bash > /etc/bash_completion.d/cli-template
+  $ goose completion bash > /etc/bash_completion.d/goose
 MacOS:
-  $ cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
+  $ goose completion bash > /usr/local/etc/bash_completion.d/goose
 
 You will need to start a new shell for this setup to take effect.
   
@@ -93,12 +90,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion fish
-`cli-template completion fish`
+`goose completion fish`
 
 ## Usage
 > generate the autocompletion script for fish
 
-cli-template completion fish
+goose completion fish
 
 ## Description
 
@@ -107,10 +104,10 @@ cli-template completion fish
 Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
-$ cli-template completion fish | source
+$ goose completion fish | source
 
 To load completions for every new session, execute once:
-$ cli-template completion fish > ~/.config/fish/completions/cli-template.fish
+$ goose completion fish > ~/.config/fish/completions/goose.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -121,12 +118,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion powershell
-`cli-template completion powershell`
+`goose completion powershell`
 
 ## Usage
 > generate the autocompletion script for powershell
 
-cli-template completion powershell
+goose completion powershell
 
 ## Description
 
@@ -135,7 +132,7 @@ cli-template completion powershell
 Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
-PS C:\> cli-template completion powershell | Out-String | Invoke-Expression
+PS C:\> goose completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -147,12 +144,12 @@ to your powershell profile.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion zsh
-`cli-template completion zsh`
+`goose completion zsh`
 
 ## Usage
 > generate the autocompletion script for zsh
 
-cli-template completion zsh
+goose completion zsh
 
 ## Description
 
@@ -167,9 +164,9 @@ $ echo "autoload -U compinit; compinit" >> ~/.zshrc
 
 To load completions for every new session, execute once:
 # Linux:
-$ cli-template completion zsh > "${fpath[1]}/_cli-template"
+$ goose completion zsh > "${fpath[1]}/_goose"
 # macOS:
-$ cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
+$ goose completion zsh > /usr/local/share/zsh/site-functions/_goose
 
 You will need to start a new shell for this setup to take effect.
 
@@ -179,50 +176,20 @@ You will need to start a new shell for this setup to take effect.
 |Flag|Usage|
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
-# ... date
-`cli-template date`
-
-## Usage
-> Prints the current date.
-
-cli-template date
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-f, --format string`|specify a custom date format (default "02 Jan 06")|
 # ... help
-`cli-template help`
+`goose help`
 
 ## Usage
 > Help about any command
 
-cli-template help [command]
+goose help [command]
 
 ## Description
 
 ```
 Help provides help for any command in the application.
-Simply type cli-template help [path to command] for full details.
+Simply type goose help [path to command] for full details.
 ```
-# ... time
-`cli-template time`
-
-## Usage
-> Prints the current time
-
-cli-template time
-
-## Description
-
-```
-You can print a live clock with the '--live' flag!
-```
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-l, --live`|live output|
 
 
 ---
