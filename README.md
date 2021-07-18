@@ -1,5 +1,5 @@
-<h1 align="center">cli-template</h1>
-<p align="center">This cli template shows the date and time in the terminal</p>
+<h1 align="center">goose</h1>
+<p align="center">A collection of automation steps just to make the author's life a bit easier</p>
 
 <p align="center">
 
@@ -49,8 +49,9 @@
 
 ----
 
-This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
-This template prints the date or time to the terminal.
+I would be surprised if this is going to be useful to a lot more people than just myself,
+but we'll see. This CLI will help me create a bunch of ad hoc things that help me in my day to day
+development tasks.'
 
 ## Installation
 
