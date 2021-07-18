@@ -11,13 +11,12 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "goose",
-	Short: "This cli template shows the date and time in the terminal",
-	Long: `This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
-This template prints the date or time to the terminal.`,
-	Example: `cli-template date
-cli-template date --format 20060102
-cli-template time
-cli-template time --live`,
+	Short: "A collection of automation steps just to make the author's life a bit easier",
+	Long: `I would be surprised if this is going to be useful to a lot more people than just myself,
+but we'll see. This CLI will help me create a bunch of ad hoc things that help me in my day to day
+development tasks.'`,
+	Example: `goose github pat create
+goose s3 bucket create`,
 	Version: "v0.0.1", // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
 	// RunE: func(cmd *cobra.Command, args []string) error {
