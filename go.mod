@@ -1,4 +1,4 @@
-module github.com/pterm/cli-template
+module github.com/Silly-Goose-Software/goose
 
 go 1.16
 
