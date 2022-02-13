@@ -193,4 +193,4 @@ Simply type goose help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 18 July 2021**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 13 February 2022**
