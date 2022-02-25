@@ -29,20 +29,19 @@ goose s3 bucket create
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`goose completion`|generate the autocompletion script for the specified shell|
+|`goose completion`|Generate the autocompletion script for the specified shell|
 |`goose help`|Help about any command|
 # ... completion
 `goose completion`
 
 ## Usage
-> generate the autocompletion script for the specified shell
+> Generate the autocompletion script for the specified shell
 
 goose completion
 
 ## Description
 
 ```
-
 Generate the autocompletion script for goose for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
@@ -51,38 +50,42 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`goose completion bash`|generate the autocompletion script for bash|
-|`goose completion fish`|generate the autocompletion script for fish|
-|`goose completion powershell`|generate the autocompletion script for powershell|
-|`goose completion zsh`|generate the autocompletion script for zsh|
+|`goose completion bash`|Generate the autocompletion script for bash|
+|`goose completion fish`|Generate the autocompletion script for fish|
+|`goose completion powershell`|Generate the autocompletion script for powershell|
+|`goose completion zsh`|Generate the autocompletion script for zsh|
 # ... completion bash
 `goose completion bash`
 
 ## Usage
-> generate the autocompletion script for bash
+> Generate the autocompletion script for bash
 
 goose completion bash
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the bash shell.
 
 This script depends on the 'bash-completion' package.
 If it is not installed already, you can install it via your OS's package manager.
 
 To load completions in your current shell session:
-$ source <(goose completion bash)
+
+	source <(goose completion bash)
 
 To load completions for every new session, execute once:
-Linux:
-  $ goose completion bash > /etc/bash_completion.d/goose
-MacOS:
-  $ goose completion bash > /usr/local/etc/bash_completion.d/goose
+
+#### Linux:
+
+	goose completion bash > /etc/bash_completion.d/goose
+
+#### macOS:
+
+	goose completion bash > /usr/local/etc/bash_completion.d/goose
 
 You will need to start a new shell for this setup to take effect.
-  
+
 ```
 
 ## Flags
@@ -93,21 +96,22 @@ You will need to start a new shell for this setup to take effect.
 `goose completion fish`
 
 ## Usage
-> generate the autocompletion script for fish
+> Generate the autocompletion script for fish
 
 goose completion fish
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
-$ goose completion fish | source
+
+	goose completion fish | source
 
 To load completions for every new session, execute once:
-$ goose completion fish > ~/.config/fish/completions/goose.fish
+
+	goose completion fish > ~/.config/fish/completions/goose.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -121,18 +125,18 @@ You will need to start a new shell for this setup to take effect.
 `goose completion powershell`
 
 ## Usage
-> generate the autocompletion script for powershell
+> Generate the autocompletion script for powershell
 
 goose completion powershell
 
 ## Description
 
 ```
-
 Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
-PS C:\> goose completion powershell | Out-String | Invoke-Expression
+
+	goose completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -147,26 +151,29 @@ to your powershell profile.
 `goose completion zsh`
 
 ## Usage
-> generate the autocompletion script for zsh
+> Generate the autocompletion script for zsh
 
 goose completion zsh
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the zsh shell.
 
 If shell completion is not already enabled in your environment you will need
 to enable it.  You can execute the following once:
 
-$ echo "autoload -U compinit; compinit" >> ~/.zshrc
+	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
 To load completions for every new session, execute once:
-# Linux:
-$ goose completion zsh > "${fpath[1]}/_goose"
-# macOS:
-$ goose completion zsh > /usr/local/share/zsh/site-functions/_goose
+
+#### Linux:
+
+	goose completion zsh > "${fpath[1]}/_goose"
+
+#### macOS:
+
+	goose completion zsh > /usr/local/share/zsh/site-functions/_goose
 
 You will need to start a new shell for this setup to take effect.
 
@@ -193,4 +200,4 @@ Simply type goose help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 13 February 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 25 February 2022**
