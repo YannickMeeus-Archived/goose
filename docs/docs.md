@@ -26,7 +26,7 @@ goose s3 bucket create
 ## Commands
 |Command|Usage|
 |-------|-----|
-|` completion`|generate the autocompletion script for the specified shell|
+|` completion`|Generate the autocompletion script for the specified shell|
 |` fun`|A collection of useless commands.|
 |` help`|Help about any command|
 # ... completion
@@ -40,7 +40,6 @@ goose s3 bucket create
 ## Description
 
 ```
-
 Generate the autocompletion script for  for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
@@ -49,10 +48,10 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|` completion bash`|generate the autocompletion script for bash|
-|` completion fish`|generate the autocompletion script for fish|
-|` completion powershell`|generate the autocompletion script for powershell|
-|` completion zsh`|generate the autocompletion script for zsh|
+|` completion bash`|Generate the autocompletion script for bash|
+|` completion fish`|Generate the autocompletion script for fish|
+|` completion powershell`|Generate the autocompletion script for powershell|
+|` completion zsh`|Generate the autocompletion script for zsh|
 # ... completion bash
 ` completion bash`
 
@@ -70,13 +69,18 @@ This script depends on the 'bash-completion' package.
 If it is not installed already, you can install it via your OS's package manager.
 
 To load completions in your current shell session:
-$ source <( completion bash)
+
+	source <( completion bash)
 
 To load completions for every new session, execute once:
-Linux:
-  $  completion bash > /etc/bash_completion.d/
-MacOS:
-  $  completion bash > /usr/local/etc/bash_completion.d/
+
+#### Linux:
+
+	 completion bash > /etc/bash_completion.d/
+
+#### macOS:
+
+	 completion bash > /usr/local/etc/bash_completion.d/
 
 You will need to start a new shell for this setup to take effect.
 
@@ -100,10 +104,12 @@ You will need to start a new shell for this setup to take effect.
 Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
-$  completion fish | source
+
+	 completion fish | source
 
 To load completions for every new session, execute once:
-$  completion fish > ~/.config/fish/completions/.fish
+
+	 completion fish > ~/.config/fish/completions/.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -127,7 +133,8 @@ You will need to start a new shell for this setup to take effect.
 Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
-PS C:\>  completion powershell | Out-String | Invoke-Expression
+
+	 completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -157,10 +164,14 @@ to enable it.  You can execute the following once:
 	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
 To load completions for every new session, execute once:
-# Linux:
-$  completion zsh > "${fpath[1]}/_"
-# macOS:
-$  completion zsh > /usr/local/share/zsh/site-functions/_
+
+#### Linux:
+
+	 completion zsh > "${fpath[1]}/_"
+
+#### macOS:
+
+	 completion zsh > /usr/local/share/zsh/site-functions/_
 
 You will need to start a new shell for this setup to take effect.
 
