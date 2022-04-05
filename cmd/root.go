@@ -1,8 +1,11 @@
 package cmd
 
 import (
+	"github.com/Silly-Goose-Software/goose/pkg/cmd/fun"
+	"math/rand"
 	"os"
 	"os/signal"
+	"time"
 
 	"github.com/pterm/pcli"
 	"github.com/pterm/pterm"
@@ -58,7 +61,10 @@ func init() {
 	pcli.SetRepo("Silly-Goose-Software/goose")
 	pcli.SetRootCmd(rootCmd)
 	pcli.Setup()
+	rootCmd.AddCommand(fun.Cmd)
 
 	// Change global PTerm theme
 	pterm.ThemeDefault.SectionStyle = *pterm.NewStyle(pterm.FgCyan)
+
+	rand.Seed(time.Now().UnixNano())
 }
