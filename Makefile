@@ -3,7 +3,11 @@ help: ## Show all help information
 
 .PHONY: dev
 dev: ## Start development server, watches for changes and restarts process
-	@gow run .
+	watchexec -e go go run . 
+
+.PHONY: test
+test: ## Start test server, watches for changes and restarts process
+	gotestsum --watch --format pkgname-and-test-fails
 
 .PHONY: build
 build: ## Build a package
@@ -11,6 +15,5 @@ build: ## Build a package
 
 .PHONY: install-dev-deps
 install-dev-deps: ## Install implicit dependencies for development
-	# gow instead of go, adds a watch mode
-	## https://github.com/mitranim/gow
-	go install github.com/mitranim/gow@latest 
+	go install gotest.tools/gotestsum@latest
+	
