@@ -33,7 +33,7 @@ goose s3 bucket create
 ` completion`
 
 ## Usage
-> generate the autocompletion script for the specified shell
+> Generate the autocompletion script for the specified shell
 
  completion
 
@@ -57,14 +57,13 @@ See each sub-command's help for details on how to use the generated script.
 ` completion bash`
 
 ## Usage
-> generate the autocompletion script for bash
+> Generate the autocompletion script for bash
 
  completion bash
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the bash shell.
 
 This script depends on the 'bash-completion' package.
@@ -80,7 +79,7 @@ MacOS:
   $  completion bash > /usr/local/etc/bash_completion.d/
 
 You will need to start a new shell for this setup to take effect.
-  
+
 ```
 
 ## Flags
@@ -91,14 +90,13 @@ You will need to start a new shell for this setup to take effect.
 ` completion fish`
 
 ## Usage
-> generate the autocompletion script for fish
+> Generate the autocompletion script for fish
 
  completion fish
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
@@ -119,14 +117,13 @@ You will need to start a new shell for this setup to take effect.
 ` completion powershell`
 
 ## Usage
-> generate the autocompletion script for powershell
+> Generate the autocompletion script for powershell
 
  completion powershell
 
 ## Description
 
 ```
-
 Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
@@ -145,20 +142,19 @@ to your powershell profile.
 ` completion zsh`
 
 ## Usage
-> generate the autocompletion script for zsh
+> Generate the autocompletion script for zsh
 
  completion zsh
 
 ## Description
 
 ```
-
 Generate the autocompletion script for the zsh shell.
 
 If shell completion is not already enabled in your environment you will need
 to enable it.  You can execute the following once:
 
-$ echo "autoload -U compinit; compinit" >> ~/.zshrc
+	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
 To load completions for every new session, execute once:
 # Linux:
