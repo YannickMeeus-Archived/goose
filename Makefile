@@ -5,9 +5,10 @@ help: ## Show all help information
 dev: ## Start development server, watches for changes and restarts process
 	watchexec -e go go run . 
 
+##  Filtering out packages without tests, as per https://github.com/gotestyourself/gotestsum/issues/228
 .PHONY: test
 test: ## Start test server, watches for changes and restarts process
-	gotestsum --watch --format pkgname-and-test-fails
+	@gotestsum --watch --format pkgname-and-test-fails  --no-color=false | grep -v '∅'
 
 .PHONY: build
 build: ## Build a package
