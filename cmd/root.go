@@ -19,7 +19,7 @@ but we'll see. This CLI will help me create a bunch of ad hoc things that help m
 development tasks.`,
 	Example: `goose github personal-access-token create
 goose s3 bucket create`,
-	Version: "v0.0.2", // <---VERSION---> Updating this version, will also create a new GitHub release.
+	Version: "v0.0.3", // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
 	// RunE: func(cmd *cobra.Command, args []string) error {
 	// 	// Your code here
