@@ -19,7 +19,7 @@ iwr instl.sh/Silly-Goose-Software/goose/windows | iex
 ### Linux Command
 
 ```bash
-curl -sSL instl.sh/Silly-Goose-Software/goose/linux | sudo bash
+curl -sSL instl.sh/Silly-Goose-Software/goose/linux | bash
 ```
 
 #### ** macOS **
@@ -27,7 +27,7 @@ curl -sSL instl.sh/Silly-Goose-Software/goose/linux | sudo bash
 ### macOS Command
 
 ```bash
-curl -sSL instl.sh/Silly-Goose-Software/goose/macos | sudo bash
+curl -sSL instl.sh/Silly-Goose-Software/goose/macos | bash
 ```
 
 #### ** Compile from source **
