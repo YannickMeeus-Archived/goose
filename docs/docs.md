@@ -229,4 +229,4 @@ Simply type  help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 05 April 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 06 April 2022**
