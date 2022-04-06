@@ -1,7 +1,7 @@
-# Quick Start - Install goose
+# Quick Start - Install 
 
 > [!TIP]
-> goose is installable via [instl.sh](https://instl.sh).\
+>  is installable via [instl.sh](https://instl.sh).\
 > You just have to run the following command and you're ready to go!
 
 <!-- tabs:start -->
@@ -35,10 +35,10 @@ curl -sSL instl.sh/Silly-Goose-Software/goose/macos | sudo bash
 ### Compile from source with Golang
 
 ?> **NOTICE**
-To compile goose from source, you have to have [Go](https://golang.org/) installed.
+To compile  from source, you have to have [Go](https://golang.org/) installed.
 
-Compiling goose from source has the benefit that the build command is the same on every platform.\
-It is not recommended to install Go only for the installation of goose.
+Compiling  from source has the benefit that the build command is the same on every platform.\
+It is not recommended to install Go only for the installation of .
 
 ```command
 go install github.com/Silly-Goose-Software/goose@latest
