@@ -1,21 +1,18 @@
-# goose
+# 
 
-## Usage
-> A collection of automation steps just to make the author's life a bit easier
-
-goose
 
 ## Description
 
 ```
+A collection of automation steps just to make the author's life a bit easier.
 I would be surprised if this is going to be useful to a lot more people than just myself,
 but we'll see. This CLI will help me create a bunch of ad hoc things that help me in my day to day
-development tasks.'
+development tasks.
 ```
 ## Examples
 
 ```bash
-goose github pat create
+goose github personal-access-token create
 goose s3 bucket create
 ```
 
@@ -29,20 +26,21 @@ goose s3 bucket create
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`goose completion`|Generate the autocompletion script for the specified shell|
-|`goose help`|Help about any command|
+|` completion`|Generate the autocompletion script for the specified shell|
+|` fun`|A collection of useless commands.|
+|` help`|Help about any command|
 # ... completion
-`goose completion`
+` completion`
 
 ## Usage
 > Generate the autocompletion script for the specified shell
 
-goose completion
+ completion
 
 ## Description
 
 ```
-Generate the autocompletion script for goose for the specified shell.
+Generate the autocompletion script for  for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
 ```
@@ -50,17 +48,17 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`goose completion bash`|Generate the autocompletion script for bash|
-|`goose completion fish`|Generate the autocompletion script for fish|
-|`goose completion powershell`|Generate the autocompletion script for powershell|
-|`goose completion zsh`|Generate the autocompletion script for zsh|
+|` completion bash`|Generate the autocompletion script for bash|
+|` completion fish`|Generate the autocompletion script for fish|
+|` completion powershell`|Generate the autocompletion script for powershell|
+|` completion zsh`|Generate the autocompletion script for zsh|
 # ... completion bash
-`goose completion bash`
+` completion bash`
 
 ## Usage
 > Generate the autocompletion script for bash
 
-goose completion bash
+ completion bash
 
 ## Description
 
@@ -72,17 +70,17 @@ If it is not installed already, you can install it via your OS's package manager
 
 To load completions in your current shell session:
 
-	source <(goose completion bash)
+	source <( completion bash)
 
 To load completions for every new session, execute once:
 
 #### Linux:
 
-	goose completion bash > /etc/bash_completion.d/goose
+	 completion bash > /etc/bash_completion.d/
 
 #### macOS:
 
-	goose completion bash > /usr/local/etc/bash_completion.d/goose
+	 completion bash > /usr/local/etc/bash_completion.d/
 
 You will need to start a new shell for this setup to take effect.
 
@@ -93,12 +91,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion fish
-`goose completion fish`
+` completion fish`
 
 ## Usage
 > Generate the autocompletion script for fish
 
-goose completion fish
+ completion fish
 
 ## Description
 
@@ -107,11 +105,11 @@ Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
 
-	goose completion fish | source
+	 completion fish | source
 
 To load completions for every new session, execute once:
 
-	goose completion fish > ~/.config/fish/completions/goose.fish
+	 completion fish > ~/.config/fish/completions/.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -122,12 +120,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion powershell
-`goose completion powershell`
+` completion powershell`
 
 ## Usage
 > Generate the autocompletion script for powershell
 
-goose completion powershell
+ completion powershell
 
 ## Description
 
@@ -136,7 +134,7 @@ Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
 
-	goose completion powershell | Out-String | Invoke-Expression
+	 completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -148,12 +146,12 @@ to your powershell profile.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion zsh
-`goose completion zsh`
+` completion zsh`
 
 ## Usage
 > Generate the autocompletion script for zsh
 
-goose completion zsh
+ completion zsh
 
 ## Description
 
@@ -169,11 +167,11 @@ To load completions for every new session, execute once:
 
 #### Linux:
 
-	goose completion zsh > "${fpath[1]}/_goose"
+	 completion zsh > "${fpath[1]}/_"
 
 #### macOS:
 
-	goose completion zsh > /usr/local/share/zsh/site-functions/_goose
+	 completion zsh > /usr/local/share/zsh/site-functions/_
 
 You will need to start a new shell for this setup to take effect.
 
@@ -183,21 +181,52 @@ You will need to start a new shell for this setup to take effect.
 |Flag|Usage|
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
+# ... fun
+` fun`
+
+## Usage
+> A collection of useless commands.
+
+ fun
+
+## Description
+
+```
+Sometimes also contains sandboxes useful commands that need a bit more polish.
+```
+
+## Commands
+|Command|Usage|
+|-------|-----|
+|` fun mock`|Prints out a string AlL FuNNy LiKe|
+# ... fun mock
+` fun mock`
+
+## Usage
+> Prints out a string AlL FuNNy LiKe
+
+ fun mock [string]
+
+## Description
+
+```
+Don't judge me, I do this for fun, alright?'
+```
 # ... help
-`goose help`
+` help`
 
 ## Usage
 > Help about any command
 
-goose help [command]
+ help [command]
 
 ## Description
 
 ```
 Help provides help for any command in the application.
-Simply type goose help [path to command] for full details.
+Simply type  help [path to command] for full details.
 ```
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 25 February 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 06 April 2022**

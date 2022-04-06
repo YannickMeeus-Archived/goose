@@ -1,8 +1,11 @@
 package cmd
 
 import (
+	"github.com/Silly-Goose-Software/goose/pkg/cmd/fun"
+	"math/rand"
 	"os"
 	"os/signal"
+	"time"
 
 	"github.com/pterm/pcli"
 	"github.com/pterm/pterm"
@@ -10,14 +13,13 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "goose",
-	Short: "A collection of automation steps just to make the author's life a bit easier",
-	Long: `I would be surprised if this is going to be useful to a lot more people than just myself,
+	Long: `A collection of automation steps just to make the author's life a bit easier.
+I would be surprised if this is going to be useful to a lot more people than just myself,
 but we'll see. This CLI will help me create a bunch of ad hoc things that help me in my day to day
-development tasks.'`,
-	Example: `goose github pat create
+development tasks.`,
+	Example: `goose github personal-access-token create
 goose s3 bucket create`,
-	Version: "v0.0.2", // <---VERSION---> Updating this version, will also create a new GitHub release.
+	Version: "v0.0.3", // <---VERSION---> Updating this version, will also create a new GitHub release.
 	// Uncomment the following lines if your bare application has an action associated with it:
 	// RunE: func(cmd *cobra.Command, args []string) error {
 	// 	// Your code here
@@ -59,7 +61,10 @@ func init() {
 	pcli.SetRepo("Silly-Goose-Software/goose")
 	pcli.SetRootCmd(rootCmd)
 	pcli.Setup()
+	rootCmd.AddCommand(fun.Cmd)
 
 	// Change global PTerm theme
 	pterm.ThemeDefault.SectionStyle = *pterm.NewStyle(pterm.FgCyan)
+
+	rand.Seed(time.Now().UnixNano())
 }
